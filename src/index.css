@@ -1,0 +1,102 @@
+body {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+*:not(textarea) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+input[type="button"], textarea, select, span, .title {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+body.dark {
+  background-color: #121212;
+}
+
+.dark input[type="button"] {
+  background-color: #1a73e8;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dark textarea {
+  border-radius: 5px;
+  border: 2px solid #4a4a4a;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark input[type="button"]:hover {
+  background-color: #0052bd;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.dark .title {
+  background-color: #2f4f4f;
+}
+
+.action-dropdown select {
+  height: 30px;
+}
+
+.action-dropdown.dark select {
+  color: white;
+  background-color: #1e1e1e;
+}
+
+.action-dropdown.dark option {
+  color: white;
+  background-color: black;
+}
+
+.light input[type="button"] {
+  background-color: #0052bd;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.light textarea {
+  border-radius: 5px;
+  border: 2px solid;
+  background-color: floralwhite;
+}
+
+.light input[type="button"]:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.title.light {
+  color: white;
+  background-color: #121212;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(53, 53, 53, 0.585);
+}
+
+.title span {
+  margin: 0 4vh;
+}
+
+.title-text {
+  font-weight: bold;
+}
